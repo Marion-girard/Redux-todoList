@@ -2,12 +2,12 @@ import { createSlice } from "@reduxjs/toolkit"
 
 export const todoSlice = createSlice({
     name:'todo',
-    intialState: {
+    initialState: {
         value:''
     },
     reducers: {
         incrementTodo: (state, action) => {
-            state.value === action.payload
+            state.value = action.payload
         }
     }
 })
