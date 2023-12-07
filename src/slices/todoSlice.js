@@ -7,7 +7,7 @@ export const todoSlice = createSlice({
     },
     reducers: {
         incrementTodo: (state, action) => {
-            state.value === action.payload
+            state.value = action.payload
         }
     }
 })
